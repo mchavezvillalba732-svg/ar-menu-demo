@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo AR - Ver en tu mesa</title>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#fff;color:#111;margin:0;padding:16px;}
+h1{font-size:1.4rem;margin:0 0 12px;}
+model-viewer{width:100%;height:70vh;background-color:#eee;position:relative;display:block;}
+p{font-size:1rem;line-height:1.5;}
+</style>
+</head>
+<body>
+<h1>Demo: ver el plato en tu mesa</h1>
+<model-viewer src="assets/model.glb" alt="Modelo 3D de prueba" ar ar-modes="webxr scene-viewer quick-look" ar-scale="fixed" camera-controls touch-action="pan-y" auto-rotate shadow-intensity="1" loading="eager">
+<button slot="ar-button" style="position:absolute;bottom:20px;left:50%;transform:translateX(-50%);border-radius:999px;background:#111;color:#fff;border:none;padding:12px 20px;font-size:16px;">Ver en tu mesa</button>
+</model-viewer>
+<p>Toca 'Ver en tu mesa', apunta la cámara a la mesa y mueve el celular despacio hasta que aparezca el modelo.</p>
+</body>
+</html>
